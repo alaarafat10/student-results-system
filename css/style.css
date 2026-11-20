@@ -1,0 +1,69 @@
+:root {
+  --ink: #1f2a37;
+  --paper: #f4f6f8;
+  --accent: #0f766e;
+  --accent-dark: #0b5c56;
+  --danger-bg: #fdecec;
+  --danger: #b42318;
+}
+
+body {
+  font-family: "Cairo", system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.panel {
+  border: 1px solid #dde3ea;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: var(--accent-dark);
+  --bs-btn-hover-border-color: var(--accent-dark);
+  --bs-btn-active-bg: var(--accent-dark);
+  --bs-btn-active-border-color: var(--accent-dark);
+}
+
+.btn-outline-dark {
+  --bs-btn-color: var(--ink);
+  --bs-btn-border-color: var(--ink);
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .2rem rgba(15, 118, 110, .2);
+}
+
+.error-box {
+  color: var(--danger);
+  background: var(--danger-bg);
+  border-radius: 8px;
+  padding: .6rem .9rem;
+  font-weight: 600;
+}
+
+.error-box:empty {
+  display: none;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 0;
+  border-bottom: 1px solid #e8edf2;
+}
+
+.student-row:last-child {
+  border-bottom: 0;
+}
+
+.report-figure {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
